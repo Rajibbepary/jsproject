@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!---fonawesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    
+
+
+</head>
+<body>
+   <div class="container">
+    <h1 class="h1">Resturant</h1>
+    <br><br>
+    <div class="card">
+        <div class="card-img">
+            <img src="img/food-5.jpg" alt="" class="img">
+        </div>
+        <div class="card-titel">
+            <h3>Chicken Pizza</h3>
+            <h3>Size : 6'</h3>
+            <h3 class="Price">Price : <span id="price">220</span></h3>
+            <i class="fa-solid fa-plus icon" onclick="incretament('count','price','item')"></i>
+            <input type="button" value="0" class="ipt" id="count">
+            <i class="fa-solid fa-minus icon" onclick="decretament('count','price','item')"></i>
+            <span class="item">Your items $<span id="item">00</span></span>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <hr class="hr-style">
+    <div class="card">
+        <div class="card-img">
+            <img src="img/drinks-6.jpg" alt="" class="img">
+        </div>
+        <div class="card-titel">
+            <h3>Col Drinks</h3>
+            <h3>Size : 12'</h3>
+            <h3 class="Price">Price : $<span id="price1">600</span></h3>
+            <i class="fa-solid fa-plus icon" onclick="incretament('count1','price1','item1')"></i>
+            <input type="button" value="0" class="ipt" id="count1">
+            <i class="fa-solid fa-minus icon" onclick="decretament('count1','price1','item1')"></i>
+            <span class="item">Your items $<span id="item1">00</span></span>
+        </div>
+    </div>
+
+   </div>
+<div class="fixed">
+    <br>
+<h1 class="total"> The Total Ammount of</h1>
+<h2>Product Ammount : $<span id="pr_ammount">00</span></h2>
+<h2>Delivery charge : $<span id="charge">20</span></h2>
+---------------------------------------------------------------------------------
+<h2>Total Product Ammount : $ <span id="total_ammount">00</span></h2>
+<hr><br><br>
+<div class="kupon" id="KUPON_MAIN_DIV">
+    <h4 class="kupon"><i>kupon code use 50 tk diccount</i></h4>
+    </h4>
+<h4 class="code">Your Code Is : Rajib_Raj</h4><br>
+<input type="text" id="KUpon_input" placeholder="Your kupon code.." class="kuponinpiut" >
+<br><br>
+<button class="Apply" id="Applybtn">Apply</button>
+</div>
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="div">
+    <img src="img/drinks-6.jpg" alt="" class="imgg" id="img"><br>
+    <button class="bttn" onclick="next()">Next</button>
+    <button class="bttn" onclick="pric()">Pric</button>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="bigdiv">
+    <div class="div1">
+        <p class="fp1"><i class='fas fa-university'></i></p>
+        <h2 id="num1" class="num1"></h2>
+        <h1 style="color: black;"> Founded</h1>
+    </div>
+    
+    <div class="div1">
+        <p class="fp1"><i class='fas fa-user-shield'></i></p>
+        <h2 id="num2" class="num1"></h2>
+        <h1 style="color: black;">Faculty Members </h1>
+    </div>
+    
+    <div class="div1">
+        
+        <p class="fp1"><i class='fas fa-users'></i></p>
+        <h2 id="num3" class="num1"></h2>
+        <h1 style="color: black;">  Regular Students</h1>
+    </div>
+</div>
+<br><br>
+
+<div class="hero">
+<div class="highway"></div>
+<div class="city"></div>
+<div class="car">
+    <img src="img/car.png">
+</div>
+<div class="wheel">
+    <img src="img/wheel.png" class="back-wheel">
+    <img src="img/wheel.png" class="front-wheel">
+</div>
+
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!--js link-->
+    <script src="index.js"></script>
+</body>
+</html>
